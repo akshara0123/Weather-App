@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <link rel="stylesheet" type="text/css" href="App.css">
+</head>
+<body>
+  <div class="container">
+    <h1><img src="./Icons/unknown.jfif" alt="Weather App" width="50" height="30">Weather App</h1>
+    <div id="weather-info">
+      <h2>Current Weather</h2>
+      <p>City:<span id="city"></span></p>
+      <p>Conditions:<span id="condition"></span></p>
+      <p>Temperature:<span id="temperature"></span> &deg;C</p>
+      <p>Humidity: <span id="humidity"></span>%</p>
+      <p>Wind Speed: <span id="wind-speed"></span> km/h</p>
+      <p>Date and Time: <span id="date-time"></span></p>
+    </div>
+    <div id="chart-container">
+      <h2>Weather Forecast for the Next 7 Days</h2>
+      <canvas id="chart"></canvas>
+    </div>
+    <div id="error-message"></div>
+    <form id="city-form">
+      <input type="text" id="city-input" placeholder="Enter your city name">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+  <script src="App.js"></script>
+</body>
+</html>
